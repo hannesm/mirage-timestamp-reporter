@@ -1,0 +1,5 @@
+(library
+  (name mirage_timestamp_reporter)
+  (public_name mirage-timestamp-reporter)
+  (modules mirage_timestamp_reporter)
+  (libraries logs logs.fmt mirage-clock-lwt ptime))

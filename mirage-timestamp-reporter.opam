@@ -1,0 +1,22 @@
+opam-version: "2.0"
+maintainer: "Hannes Mehnert <hannes@mehnert.org>"
+authors: ["Hannes Mehnert <hannes@mehnert.org>"]
+homepage: "https://github.com/hannesm/mirage-timestamp-reporter"
+doc: "https://hannesm.github.io/mirage-timestamp-reporter"
+dev-repo: "git+https://github.com/mirage/mirage-timestamp-reporter.git"
+bug-reports: "https://github.com/mirage/mirage-timestamp-reporter/issues"
+license: "ISC"
+
+depends: [
+  "ocaml" {>= "4.04.2"}
+  "logs"
+  "mirage-clock-lwt"
+  "ptime"
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+synopsis: "Mirage reporter that includes a timestamp"
+description: """
+"""
